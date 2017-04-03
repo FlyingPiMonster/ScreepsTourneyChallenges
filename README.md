@@ -17,3 +17,5 @@ Contains an overview of the challenge. Intended to grab people's attention and m
     - **mod** _optional_ A link to a GitHub repository containing the mod that will be used to enforce the game rules. This can be used for testing
 
 In addition, there is an **index.json** file at the top of the directory structure. This JSON file is an array of the directory names of all challenges, sorted from most to least recent.
+
+Remember to put titles at the tops of all Markdown documents, like this: `(!--title Test Challenge!--)`
