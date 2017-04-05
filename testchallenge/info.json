@@ -1,8 +1,8 @@
 {
     "name": "Test Challenge",
     "times": {
-        "submission": 1,
-        "processing": 1209601
+        "submission": 1491350716,
+        "processing": 1492350716
     },
     "rules": {
         "allowChooseMineral": true,
