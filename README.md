@@ -10,7 +10,9 @@ Each challenge has its own directory. Inside that directory are three files.
 Contains an overview of the challenge. Intended to grab people's attention and make them want to participate
 - **rules.md** Contains a detailed description of the rules of the challenge
 - **info.json** A JSON file describing the challenge
-    - **name** _required_ The name of the challenge
+    - **name** _required_ The display name of the challenge
+    - **interface** _forbidden_ The URL of the web interface, to be added by the processor
+    - **apikey** _forbidden_ The API key to the web interface, to be added by the processor
     - **times** _required_ Deadlines in UTC seconds
         - **submission** _required_ The time the submission period begins
         - **processing** _required_ The time the processing period begins
