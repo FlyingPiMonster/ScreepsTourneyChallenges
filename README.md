@@ -14,13 +14,14 @@ Contains an overview of the challenge. Intended to grab people's attention and m
     - **times** _required_ Deadlines in UTC seconds
         - **submission** _required_ The time the submission period begins
         - **processing** _required_ The time the processing period begins
-    - **mod** _optional_ A link to a GitHub repository containing the mod that will be used to enforce the game rules. This can be used for testing
+    - **mods** _optional_ An array of links to GitHub repositories containing the mods that will be used to enforce the game rules. Players may install these mods to test their code; this mod list does not contain the mod responsible for communicating with the web interface. The mod must have `index.js` as its entry point
     - **rules** _required_ A list of rules for the tournament
         - **terrain** _required_ The terrain of the room, in compressed format (a 2500 char string, where 0 means plain, 1 means wall, 2 means swamp)
         - **objects** _required_ An array of the objects in the room.
         - **allowChooseMineral** _default false_ Whether competitors may choose which mineral will be in their room
         - **disallowChooseSpawn** _defailt false_ If true, competitors will not be able to choose the coordinates of their initial spawn.
         - **cpu** _default 30_ How much CPU each player is allowed
+        - **constants** _default {}_ A list of constants to be replaced on the server. The server will use `_.extend()` to add these properties to the default constants.
 
 In addition, there is an **index.json** file at the top of the directory structure. This JSON file is an array of the directory names of all challenges, sorted from most to least recent.
 
