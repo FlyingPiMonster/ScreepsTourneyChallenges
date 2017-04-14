@@ -24,6 +24,7 @@ Contains an overview of the challenge. Intended to grab people's attention and m
         - **disallowChooseSpawn** _defailt false_ If true, competitors will not be able to choose the coordinates of their initial spawn.
         - **cpu** _default 30_ How much CPU each player is allowed
         - **constants** _default {}_ A list of constants to be replaced on the server. The server will use `_.extend()` to add these properties to the default constants.
+        - **market** _default {}_ An object containing the prices of each resource to buy or sell. If a resource is not present as a key, it will not be bought or sold. If it is present, market orders will be kept filled with 1M of that resource each at the given cost to both buy and sell.
 
 In addition, there is an **index.json** file at the top of the directory structure. This JSON file is an array of the directory names of all challenges, sorted from most to least recent.
 

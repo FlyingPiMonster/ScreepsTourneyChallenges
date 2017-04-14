@@ -38,6 +38,10 @@
                 "mineralAmount": 70000,
                 "density": 3
             }
-        ]
+        ],
+        "market": {
+            "energy": 0.1,
+            "power": 1
+        }
     }
 }
